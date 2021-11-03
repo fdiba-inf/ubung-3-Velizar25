@@ -9,8 +9,8 @@ public class PrimeNumber{
       int num = input.nextInt();
       int v = 2;
       boolean prime = true;
-      while (prime && (v <= num)) {
-        if (num % v == 0) {
+      while (num > 2) {
+        if (num % 2 == 0 && num != v) {
           prime = false;
           break;
         }
